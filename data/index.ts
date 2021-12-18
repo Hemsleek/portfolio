@@ -1,6 +1,6 @@
 export const navData = {
-  name: "ASIYANBI MUBASHIR",
-  navLinks: "About,Work,Contact".split(","),
+  // name: "ASIYANBI MUBASHIR",
+  // navLinks: "About,Work,Contact".split(","),
 };
 
 export const HeroData = {
@@ -9,8 +9,18 @@ export const HeroData = {
   // name:"",
   // role:""
 };
+export const projectData = {
+  projectCoverBg: "",
+  projectDetailBg: "",
+  // technologies: [],
+  images: [],
+  // projectName: "",
+  // projectDesc: "",
+  // projectUrl:"",
+  textColor: "",
+};
 
-export const projectData = [];
+export const projectsData = [projectData, projectData, projectData];
 
 export const aboutData = {
   // about:""
@@ -26,5 +36,8 @@ export const mailData = {
 };
 export const footerData = {
   // name:"",
-  // copyrightYear:""
+  // copyrightYear:"",
+  socialsLink: {
+    github: "https://github.com/hemsleek",
+  },
 };

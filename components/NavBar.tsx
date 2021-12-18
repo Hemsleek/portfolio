@@ -14,9 +14,9 @@ const NavBar = ({
       <h2 className="p-2 font-bold ">{name}</h2>
       <div className="flex items-center gap-8">
         {navLinks.map((link) => (
-          <span key={`nav-link-${link}`} className="p-2">
+          <a href="#" key={`nav-link-${link}`} className="p-2">
             {link}
-          </span>
+          </a>
         ))}
         <Image
           className="ml-4"

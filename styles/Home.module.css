@@ -4,3 +4,11 @@
 .main {
   @apply flex-grow px-52 pb-[5.68rem] flex flex-col items-center overflow-auto;
 }
+
+.project:nth-child(odd) {
+  @apply justify-end;
+}
+
+.project:nth-child(odd) .projectDetails {
+  left: 0;
+}

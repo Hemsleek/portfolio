@@ -15,6 +15,7 @@ import {
   HeroData,
   mailData,
   navData,
+  projectsData,
   techTools,
 } from "../data";
 import styles from "../styles/Home.module.css";
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
       <NavBar {...navData} />
       <main className={styles.main}>
         <Hero {...HeroData} />
-        <Projects />
+        <Projects projectsData={projectsData} />
         <About {...aboutData} />
         <TechTools {...techTools} />
         <Mail {...mailData} />
