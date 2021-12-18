@@ -3,11 +3,14 @@ import React from "react";
 import { appTheme, toggleTheme } from "../entity";
 import { IName } from "../utils/types";
 
-const NavBar = ({ name = "Your Name", navLinks = [] }: IName) => {
+const NavBar = ({
+  name = "Your Name",
+  navLinks = Array(3).fill("Link"),
+}: IName) => {
   const theme = appTheme.use();
 
   return (
-    <nav className="px-52 flex items-center justify-between h-14">
+    <nav className="px-[13.62rem] bg-white  flex items-center justify-between h-10">
       <h2 className="p-2 font-bold ">{name}</h2>
       <div className="flex items-center gap-8">
         {navLinks.map((link) => (

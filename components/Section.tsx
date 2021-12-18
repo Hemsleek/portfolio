@@ -12,7 +12,7 @@ const Section: NextPage<ISection> = ({ children, rightPadding = true, bg }) => {
   const theme = appTheme.use();
 
   const background = bg
-    ? url(`../public/imgs/${bg}.png`)
+    ? `url("../public/imgs/${bg}.png")`
     : theme === "light"
     ? "white"
     : "black";
