@@ -38,8 +38,10 @@ const Hero = ({
         </div>
       )}
       <div className="flex flex-col items-center mt-[1.37rem] font-normal">
-        <span className="text-sm ">Hello,I'm</span>
-        <h3 className="text-h-black text-[4rem] leading-none ">{name}</h3>
+        <span className="text-sm dark:text-white">Hello,I&apos;m</span>
+        <h3 className="text-h-black dark:text-white text-[4rem] leading-none ">
+          {name}
+        </h3>
         <span className="text-h-grey text-[4rem] leading-none">{role}</span>
       </div>
     </section>

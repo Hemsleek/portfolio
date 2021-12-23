@@ -24,7 +24,7 @@ const Footer = ({
   const theme = appTheme.use();
 
   return (
-    <footer className="px-52 bg-white mb-[2.187rem] flex items-center justify-between">
+    <footer className="px-52  py-4 bg-white dark:bg-transparent mb-[1.3125rem] flex items-center justify-between">
       <div className="socials flex items-center gap-x-[1.81rem] font-medium">
         <a href={socialsLink.github ?? "#"} target="_blank" rel="noreferrer">
           <GithubIcon theme={theme} />
@@ -41,8 +41,8 @@ const Footer = ({
           <TwitterIcon theme={theme} />
         </a>
       </div>
-      <div className="flex items-center text-[0.875rem]">
-        <span className="border-r-[1px] border-r-h-black pr-2 mr-2 font-medium">
+      <div className="flex items-center text-[0.875rem] text-h-black dark:text-white">
+        <span className="border-r-[1px] border-r-h-black dark:border-r-white pr-2 mr-2 font-medium">
           Copyright © {copyrightYear}
         </span>
 

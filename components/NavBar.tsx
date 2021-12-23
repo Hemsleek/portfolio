@@ -10,7 +10,7 @@ const NavBar = ({
   const theme = appTheme.use();
 
   return (
-    <nav className="px-[13.62rem] bg-white dark:bg-black flex items-center justify-between h-10">
+    <nav className="px-[14.245rem] bg-white dark:bg-transparent dark:text-white flex items-center justify-between h-10">
       <h2 className="p-2 font-bold ">{name}</h2>
       <div className="flex items-center gap-8">
         {navLinks.map((link, linkIndex) => (

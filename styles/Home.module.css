@@ -1,5 +1,5 @@
 .container {
-  @apply text-h-blue mt-[0.625rem]  h-screen flex flex-col bg-white;
+  @apply text-h-blue  h-screen flex flex-col;
 }
 .main {
   @apply flex-grow px-52 pb-[5.68rem] flex flex-col items-center overflow-auto;
