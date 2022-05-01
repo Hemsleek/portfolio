@@ -1,8 +1,8 @@
 import React from "react";
 
 const TechTools = ({
-  technologies = ["REACTJS", "NEXTJS", "NODE"],
-  tools = ["HTML", "CSS", "JAVASCRIPT"],
+  technologies = ["REACTJS", "NEXTJS", "REACT NATIVE", "NODE"],
+  tools = ["HTML", "CSS", "JAVASCRIPT", "PYTHON"],
 }) => {
   return (
     <section className="mt-[4.5rem] pl-[5.5rem] grid grid-cols-2 gap-x-[9.8rem]">

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import { appTheme, toggleTheme } from "../entity";
+import { scrollToElement } from "../utils/helpers";
 import { IName } from "../utils/types";
 
 const NavBar = ({
   name = "Your Name",
-  navLinks = Array(3).fill("Link"),
+  navLinks = Array(3).fill("link"),
 }: IName) => {
   const theme = appTheme.use();
 
@@ -14,9 +15,13 @@ const NavBar = ({
       <h2 className="p-2 font-bold ">{name}</h2>
       <div className="flex items-center gap-8">
         {navLinks.map((link, linkIndex) => (
-          <a href="#" key={`nav-link-${linkIndex}`} className="p-2">
+          <span
+            onClick={() => scrollToElement(link)}
+            key={`nav-link-${linkIndex}`}
+            className="p-2 capitalize cursor-pointer select-none"
+          >
             {link}
-          </a>
+          </span>
         ))}
         <Image
           className="ml-4"

@@ -1,6 +1,6 @@
 export const navData = {
   // name: "ASIYANBI MUBASHIR",
-  // navLinks: "About,Work,Contact".split(","),
+  navLinks: "about,work,contact".split(","),
 };
 
 export const HeroData = {
