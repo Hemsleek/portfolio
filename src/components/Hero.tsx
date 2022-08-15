@@ -15,7 +15,10 @@ const Hero = ({
   pictureBgColor,
 }: IHero) => {
   return (
-    <section className="hero mt-[7.25rem] mb-[2.375rem] flex flex-col items-center">
+    <section
+      id="hero-section"
+      className="hero mt-[7.25rem] mb-[2.375rem] flex flex-col items-center"
+    >
       {pictureLink === "default" ? (
         <Image
           src="/vectors/default-pic.svg"
@@ -39,10 +42,12 @@ const Hero = ({
       )}
       <div className="flex flex-col items-center mt-[1.37rem] font-normal">
         <span className="text-sm dark:text-white">Hello,I&apos;m</span>
-        <h3 className="text-h-black dark:text-white text-[4rem] leading-none ">
+        <h3 className="text-h-black my-4 md:my-0 text-center md:text-left dark:text-white text-[3rem] md:text-[4rem] leading-none ">
           {name}
         </h3>
-        <span className="text-h-grey text-[4rem] leading-none">{role}</span>
+        <span className="text-h-grey text-[3.3rem] text-center md:text-left md:text-[4rem] leading-none">
+          {role}
+        </span>
       </div>
     </section>
   );

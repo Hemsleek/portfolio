@@ -24,7 +24,7 @@ body {
   display: none;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   :root {
     font-size: 12px;
   }

@@ -23,16 +23,16 @@ const ProjectCard = ({
 }: IProject) => {
   return (
     <div
-      className={`${styles.project} project relative  h-[39.3rem] w-[64rem] flex `}
+      className={`${styles.project} project relative  h-[39.3rem] w-full xl:w-[64rem] flex flex-col md:flex-row  `}
       style={textColor ? { color: textColor } : { color: "#fff" }}
     >
       <div
         style={{ background: "#C1E5C0", backgroundColor: projectCoverBg }}
-        className="project-cover w-[51.5rem]  h-full"
+        className="project-cover w-full md:w-[51.5rem] order-2 md:order-1  h-full"
       ></div>
       <div
         style={{ background: "#18191F", backgroundColor: projectDetailBg }}
-        className={` right-0 ${styles.projectDetails} absolute  top-[2.5rem] w-[21.23rem] h-[16rem] px-8 py-6 flex flex-col select-none`}
+        className={` right-0 ${styles.projectDetails} md:absolute  top-[2.5rem] w-full md:w-[21.23rem] h-[16rem] px-8 py-6 flex flex-col select-none order-1 md:order-2 `}
       >
         <h4 className="font-semibold text-[1.5rem]">{projectName}</h4>
         <p className="mt-2 text-ellipsis  mb-6 font-extralight">

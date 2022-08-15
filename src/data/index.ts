@@ -1,5 +1,6 @@
 export const navData = {
   // name: "ASIYANBI MUBASHIR",
+  // resumeLink: "https://resume.io/r/aP4A2npDW",
   navLinks: "about,work,contact".split(","),
 };
 
@@ -39,5 +40,7 @@ export const footerData = {
   // copyrightYear:"",
   socialsLink: {
     github: "https://github.com/hemsleek",
+    linkedIn: "https://www.linkedin.com/in/asiyanbi-mubashir-53566218b/",
+    twitter: "https://www.twitter.com/hemsleek",
   },
 };
