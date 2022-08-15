@@ -39,7 +39,7 @@ export const techTools = {
 };
 
 export const mailData = {
-  email: "ASIYANBIMUBASHIR@GMAIL.COM",
+  email: "asiyanbimubashir@gmail.com",
 };
 export const footerData = {
   name: "Hemsleek",
