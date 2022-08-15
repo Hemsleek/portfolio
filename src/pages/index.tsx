@@ -30,8 +30,8 @@ const Home: NextPage = () => {
         <About {...aboutData} />
         <TechTools {...techTools} />
         <Mail {...mailData} />
+        <Footer {...footerData} />
       </main>
-      <Footer {...footerData} />
     </div>
   );
 };

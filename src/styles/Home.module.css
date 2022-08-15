@@ -2,7 +2,7 @@
   @apply text-h-blue  h-screen flex flex-col;
 }
 .main {
-  @apply flex-grow px-8 xl:px-52 pb-[5.68rem] flex flex-col items-center overflow-auto;
+  @apply flex-grow px-8 xl:px-52  flex flex-col items-center overflow-auto;
 }
 
 .project:nth-child(odd) {
