@@ -24,7 +24,7 @@ const Footer = ({
   const theme = appTheme.use();
 
   return (
-    <footer className=" mt-[4rem] px-[3rem] xl:px-52  py-4 bg-white dark:bg-transparent mb-[1.3125rem] flex flex-col md:flex-row items-center justify-between w-screen shadow-inner">
+    <footer className=" mt-[4rem] px-[3rem] xl:px-52  py-4 bg-white dark:bg-transparent mb-[1.3125rem] flex flex-col md:flex-row items-center justify-between   w-full">
       <div className="socials flex items-center gap-x-[1.81rem] font-medium">
         <a
           className="animate-bounce hover:animate-none"
