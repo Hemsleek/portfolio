@@ -9,7 +9,7 @@ const Mail = ({ email = "YOUREMAIL@GMAIL.COM" }) => {
           something? Feel free to reach out.
         </span>
         <a
-          href="mailto:asiyanbimubashir@gmail.com"
+          href={`mailto:${email.toLowerCase()}`}
           className="mt-[1.5rem] text-center font-bold text-[1.7rem] md:text-[2.25rem] text-[#313131] dark:text-white cursor-pointer"
         >
           {email}
