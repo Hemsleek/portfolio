@@ -12,7 +12,7 @@ const NavBar = ({
   const theme = appTheme.use();
 
   return (
-    <nav className="px-[1.5rem] md:px-[3rem] xl:pl-[14.245rem] xl:pr-[10.245rem] bg-white dark:bg-transparent dark:text-white flex   items-center justify-between h-[20rem] drop-shadow-md">
+    <nav className="px-[1.5rem] md:px-[3rem] xl:pl-[14.245rem] xl:pr-[10.245rem] bg-white dark:bg-transparent dark:text-white flex   items-center justify-between h-[20rem] drop-shadow-md font-bebas">
       <a
         href={resumeLink}
         target="_blank"

@@ -61,7 +61,7 @@ const Footer = ({
           <TwitterIcon theme={theme} />
         </a>
       </div>
-      <div className="flex items-center text-[0.875rem] text-h-black dark:text-white mt-3 md:mt-0">
+      <div className="flex items-center text-[0.875rem] text-h-black dark:text-white mt-3 md:mt-0 font-manrope">
         <span className="border-r-[1px] border-r-h-black dark:border-r-white pr-2 mr-2 font-medium">
           Copyright © {copyrightYear}
         </span>
