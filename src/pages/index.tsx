@@ -16,9 +16,9 @@ import {
   HeroData,
   mailData,
   navData,
-  projectsData,
   techTools,
 } from "../data";
+import { projectsData } from "../data/projectData";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {

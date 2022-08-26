@@ -10,18 +10,6 @@ export const HeroData = {
   name: "ASIYANBI MUBASHIR",
   role: "FRONTEND ENGINEER",
 };
-export const projectData = {
-  projectCoverBg: "",
-  projectDetailBg: "",
-  // technologies: [],
-  images: [],
-  // projectName: "",
-  // projectDesc: "",
-  // projectUrl:"",
-  textColor: "",
-};
-
-export const projectsData = [projectData, projectData, projectData];
 
 export const aboutData = {
   about:
