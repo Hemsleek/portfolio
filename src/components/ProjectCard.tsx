@@ -26,12 +26,12 @@ const ProjectCard = ({
   const isImageAvailable = images.length !== 0;
   return (
     <div
-      className={`${styles.project} project relative  h-[39.3rem] w-full xl:w-[64rem] flex flex-col md:flex-row font-manrope`}
+      className={`${styles.project} project md:relative h-auto  md:h-[39.3rem]  w-full xl:w-[64rem] flex flex-col md:flex-row font-manrope`}
       style={textColor ? { color: textColor } : { color: "#fff" }}
     >
       <div
         style={{ background: "#C1E5C0", backgroundColor: projectCoverBg }}
-        className="project-cover w-full md:w-[51.5rem] order-2 md:order-1  h-full shadow-md"
+        className="project-cover w-full md:w-[51.5rem] order-2 md:order-1   shadow-md"
       >
         {isImageAvailable && (
           <Image
@@ -47,7 +47,7 @@ const ProjectCard = ({
       </div>
       <div
         style={{ background: "#18191F", backgroundColor: projectDetailBg }}
-        className={` right-0 ${styles.projectDetails} md:absolute  top-[2.5rem] w-full md:w-[21.23rem]  px-8 py-6 flex flex-col select-none order-1 md:order-2 text-[0.86rem]`}
+        className={` right-0 ${styles.projectDetails} md:absolute  md:top-[2.5rem] w-full md:w-[21.23rem]  px-8 py-6 flex flex-col select-none order-1 md:order-2 text-[0.86rem]`}
       >
         <h4 className="font-semibold text-[1.5rem]">{projectName}</h4>
         <p className="mt-2 text-ellipsis  mb-6  font-thin">{projectDesc}</p>
