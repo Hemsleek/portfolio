@@ -45,15 +45,18 @@ const ProjectCard = ({
         </div>
         <a
           href={projectUrl ?? "#"}
-          className="flex items-center mt-3 text-[0.75rem]"
+          className={`flex items-center mt-3 text-[0.75rem] ${styles.viewProject}`}
         >
           <span className="mr-2">View Project</span>
-          <Image
-            src="/vectors/arrow.svg"
-            width={16}
-            height={16}
-            alt="arrow-icon"
-          />
+          <div className="arrow  w-[16px] h-[16px]">
+            <Image
+              src="/vectors/arrow.svg"
+              layout="responsive"
+              width={16}
+              height={16}
+              alt="arrow-icon"
+            />
+          </div>
         </a>
       </div>
     </div>

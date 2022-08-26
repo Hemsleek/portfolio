@@ -5,6 +5,7 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Mail from "../components/Mail";
+import Menu from "../components/Menu";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
 import Section from "../components/Section";
@@ -22,7 +23,8 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={`${styles.container} bg-white dark:bg-deep-blue`}>
+    <div className={`${styles.container} relative bg-white dark:bg-deep-blue`}>
+      <Menu navLinks={navData.navLinks} />
       <NavBar {...navData} />
       <main className={`${styles.main} bg-white dark:bg-transparent`}>
         <Hero {...HeroData} />

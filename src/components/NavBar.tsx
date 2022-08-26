@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { appTheme, toggleTheme } from "../entity";
+import { appState, toggleMenu, toggleTheme } from "../entity";
 import { scrollToElement } from "../utils/helpers";
 import { IName } from "../utils/types";
 
@@ -9,7 +9,7 @@ const NavBar = ({
   navLinks = Array(3).fill("link"),
   resumeLink = "#",
 }: IName) => {
-  const theme = appTheme.use();
+  const { theme } = appState.use();
 
   return (
     <nav className="px-[1.5rem] md:px-[3rem] xl:pl-[14.245rem] xl:pr-[10.245rem] bg-white dark:bg-transparent dark:text-white flex   items-center justify-between h-[20rem] drop-shadow-md font-bebas">
@@ -70,7 +70,7 @@ const NavBar = ({
         </div>
         <div className="w-[1.8rem] h-[1.8rem]">
           <Image
-            // onClick={toggleTheme}
+            onClick={toggleMenu}
             width={24}
             height={24}
             src={`/vectors/menu-unfold-${theme}.svg`}

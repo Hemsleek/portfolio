@@ -1,5 +1,5 @@
 .container {
-  @apply text-h-blue  h-screen  flex flex-col;
+  @apply text-h-blue  h-screen  flex flex-col w-full overflow-x-hidden;
 }
 .main {
   @apply flex-grow px-8 xl:px-52  flex flex-col items-center overflow-auto;
@@ -11,5 +11,26 @@
 
 .project:nth-child(odd) .projectDetails {
   left: 0;
+}
+.viewProject{
+}
+.viewProject:hover  div{
+  animation:forward-backward infinite 1.5s;
+  
+}
+
+@keyframes forward-backward {
+    0%{
+        transform:translateX(1px);
+    }
+    
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+  
 }
 

@@ -4,8 +4,6 @@ const TechTools = ({
   technologies = ["REACTJS", "NEXTJS", "REACT NATIVE", "NODE"],
   tools = ["HTML", "CSS", "JAVASCRIPT", "PYTHON", "Eas", "Expo"],
 }) => {
-  console.log({ technologies, tools });
-
   return (
     <section className="mt-[4.5rem] md:pl-[5.5rem] flex flex-col gap-y-[4rem] md:grid grid-cols-2   md:gap-x-[3.8rem] md:gap-y-0">
       <div className="technologies">

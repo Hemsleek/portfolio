@@ -3,10 +3,10 @@ import "tailwindcss/tailwind.css";
 import { useEffect } from "react";
 
 import type { AppProps } from "next/app";
-import { appTheme } from "../entity";
+import { appState } from "../entity";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const theme = appTheme.use();
+  const { theme } = appState.use();
 
   useEffect(() => {
     if (theme === "light") {

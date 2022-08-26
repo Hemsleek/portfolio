@@ -1,14 +1,25 @@
 import { entity, persistence } from "simpler-state";
-import { ITheme } from "../utils/types";
+import { IINITSTATE } from "../utils/types";
 
-const defaulttTheme: ITheme = "light";
+const defaultTheme: IINITSTATE = {
+  theme: "light",
+  showMenu: false,
+};
+
 const storedTheme =
-  typeof window !== "undefined" && window.localStorage.getItem("app-theme");
-const initState = storedTheme ? JSON.parse(storedTheme) : defaulttTheme;
+  typeof window !== "undefined" && window.localStorage.getItem("hemsleek-init");
+const initState = storedTheme ? JSON.parse(storedTheme) : defaultTheme;
 
-export const appTheme = entity(initState, [persistence("app-theme")]);
+export const appState = entity(initState, [persistence("hemsleek-init")]);
 
 export const toggleTheme = () =>
-  appTheme.set((currentValue: ITheme) =>
-    currentValue === "dark" ? "light" : "dark"
-  );
+  appState.set((currentValue: IINITSTATE) => ({
+    ...currentValue,
+    theme: currentValue.theme === "dark" ? "light" : "dark",
+  }));
+
+export const toggleMenu = () =>
+  appState.set((currentValue: IINITSTATE) => ({
+    ...currentValue,
+    showMenu: !currentValue.showMenu,
+  }));

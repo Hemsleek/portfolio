@@ -25,7 +25,7 @@ export const projectsData = [projectData, projectData, projectData];
 
 export const aboutData = {
   about:
-    "Professional and Versatile FrontEnd Engineer with 3 years of experience building user-friendly applications. A proactive team player and also dedicated to learning new technologies and working as a team to build solutions. Specializes in ReactNative,ReactJS, Nextjs, web animation and responsive design, In my spare time I explore the net for new technologies and enjoy socializing.",
+    "Professional and Versatile FrontEnd Engineer with 3 years of experience building user-friendly applications. A proactive team player and also dedicated to learning new technologies and working as a team to build solutions. Specializes in ReactNative,ReactJS, Nextjs, web animation and responsive design, In my spare time I explore the net to pickup new technologies and enjoy socializing.",
 };
 
 export const techTools = {

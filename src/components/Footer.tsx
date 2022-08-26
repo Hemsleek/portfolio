@@ -3,7 +3,7 @@ import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
 import CodepenIcon from "./icons/Codepen";
 import TwitterIcon from "./icons/TwitterIcon";
-import { appTheme } from "../entity";
+import { appState } from "../entity";
 
 interface ISocials {
   name?: string;
@@ -21,7 +21,7 @@ const Footer = ({
   copyrightYear = "2021",
   socialsLink,
 }: ISocials) => {
-  const theme = appTheme.use();
+  const { theme } = appState.use();
 
   return (
     <footer className=" mt-[4rem] px-[3rem] xl:px-52  py-5 bg-white dark:bg-transparent  flex flex-col md:flex-row items-center justify-between   w-full">

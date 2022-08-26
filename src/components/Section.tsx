@@ -1,7 +1,7 @@
 // import { url } from "inspector";
 import { NextPage } from "next";
 import React from "react";
-import { appTheme } from "../entity";
+import { appState } from "../entity";
 
 interface ISection {
   rightPadding?: boolean;
@@ -9,7 +9,7 @@ interface ISection {
 }
 
 const Section: NextPage<ISection> = ({ children, rightPadding = true, bg }) => {
-  const theme = appTheme.use();
+  const { theme } = appState.use();
 
   const background = bg
     ? `url("../public/imgs/${bg}.png")`
