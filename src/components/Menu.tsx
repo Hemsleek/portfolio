@@ -21,6 +21,7 @@ const Menu = ({ navLinks = Array(3).fill("Link") }: IMenu) => {
           src={`/vectors/menu-fold-light.svg`}
           alt="menu-icon"
           layout="responsive"
+          loading="eager"
         />
       </div>
       <div className="links flex flex-col gap-y-2 mt-4">
