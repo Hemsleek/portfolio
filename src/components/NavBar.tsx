@@ -46,6 +46,7 @@ const NavBar = ({
             src={`/vectors/${theme}-icon.svg`}
             alt="theme-icon"
             layout="responsive"
+            loading="eager"
           />
         </div>
         <a
@@ -66,6 +67,7 @@ const NavBar = ({
             height={32}
             src={`/vectors/${theme}-icon.svg`}
             alt="theme-icon"
+            loading="eager"
           />
         </div>
         <div className="w-[1.8rem] h-[1.8rem]">
@@ -76,6 +78,7 @@ const NavBar = ({
             src={`/vectors/menu-unfold-${theme}.svg`}
             alt="menu-icon"
             layout="responsive"
+            loading="eager"
           />
         </div>
       </div>
