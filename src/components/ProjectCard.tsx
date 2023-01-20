@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
+
+import AndroidSvg from "../../public/vectors/android.svg";
+import IosSvg from "../../public/vectors/ios.svg";
 export interface IProject {
   projectCoverBg?: string;
   projectDetailBg?: string;
@@ -11,6 +14,8 @@ export interface IProject {
   textColor?: string;
   projectUrl?: string;
   images?: string[];
+  type?: "mobile" | "web";
+  mobileUrl?: { type: "ios" | "android"; url: string }[];
 }
 
 const ProjectCard = ({
@@ -22,6 +27,8 @@ const ProjectCard = ({
   textColor,
   projectUrl,
   images = [],
+  type = "web",
+  mobileUrl = [],
 }: IProject) => {
   const isImageAvailable = images.length !== 0;
   return (
@@ -42,6 +49,7 @@ const ProjectCard = ({
             loading="eager"
             alt={projectName}
             objectFit="cover"
+            priority
           />
         )}
       </div>
@@ -56,23 +64,37 @@ const ProjectCard = ({
             <span key={`tech-index${techIndex}`}>{tech}</span>
           ))}
         </div>
-        <a
-          href={projectUrl ?? "#"}
-          target="_blank"
-          className={`flex items-center mt-3 text-[0.75rem] ${styles.viewProject}`}
-          rel="noreferrer"
-        >
-          <span className="mr-2">View Project</span>
-          <div className="arrow  w-[16px] h-[16px]">
-            <Image
-              src="/vectors/arrow.svg"
-              layout="responsive"
-              width={16}
-              height={16}
-              alt="arrow-icon"
-            />
+
+        {type === "mobile" ? (
+          <div className="flex items-center gap-x-6 mt-3">
+            {mobileUrl.map((app) => (
+              <a key={app.type} href={app.url} target="_blank" rel="noreferrer">
+                <Image
+                  src={app.type === "ios" ? IosSvg : AndroidSvg}
+                  alt="download-icon"
+                />
+              </a>
+            ))}
           </div>
-        </a>
+        ) : (
+          <a
+            href={projectUrl ?? "#"}
+            target="_blank"
+            className={`flex items-center mt-3 text-[0.75rem] ${styles.viewProject}`}
+            rel="noreferrer"
+          >
+            <span className="mr-2">View Project</span>
+            <div className="arrow  w-[16px] h-[16px]">
+              <Image
+                src="/vectors/arrow.svg"
+                layout="responsive"
+                width={16}
+                height={16}
+                alt="arrow-icon"
+              />
+            </div>
+          </a>
+        )}
       </div>
     </div>
   );

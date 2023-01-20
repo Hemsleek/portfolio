@@ -21,7 +21,7 @@ const projectData1 = {
   textColor: "",
 };
 
-const projectData3 = {
+const projectData2 = {
   projectCoverBg: "",
   projectDetailBg: "",
   technologies: [
@@ -40,7 +40,17 @@ const projectData3 = {
   textColor: "",
 };
 
-const projectData2 = {
+const projectData3 = {
+  projectCoverBg: "",
+  projectDetailBg: "",
+  technologies: ["ReactJS", "TypeScript", "Firebase", "StyledComponent"],
+  images: ["hayak-dashboard"],
+  projectName: "Hayak Dashboard",
+  projectDesc: "Admin / Control Dashboard for Hayak mobile Apps.",
+  // projectUrl:"",
+  textColor: "",
+};
+const projectData4 = {
   projectCoverBg: "",
   projectDetailBg: "",
   technologies: [
@@ -57,17 +67,35 @@ const projectData2 = {
     "Explore the beauty of Saudi Arabia through Hayak. Explore experiences, destinations and Saudi Arabian culture.",
   projectUrl: "https://hayak.sa/en",
   textColor: "",
+  type: "mobile",
+  mobileUrl: [
+    {
+      type: "ios",
+      url: "https://apps.apple.com/us/app/hayak-tourists-app/id1617651141",
+    },
+    {
+      type: "android",
+      url: "https://play.google.com/store/apps/details?id=com.starthub.hayakuserapp",
+    },
+  ],
 };
 
-const projectData4 = {
-  projectCoverBg: "",
+const projectData5 = {
+  projectCoverBg: "rgba(128,128,128,0.05)",
   projectDetailBg: "",
-  technologies: ["ReactJS", "TypeScript", "Firebase", "StyledComponent"],
-  images: ["hayak-dashboard"],
-  projectName: "Hayak Dashboard",
-  projectDesc: "Admin / Control Dashboard for Hayak mobile Apps.",
+  technologies: ["ReactNative", "Expo", "Eas", "TypeScript", "StyledComponent"],
+  images: ["nyatwa"],
+  projectName: "Nyatwa",
+  projectDesc: "Move Your Money Freely with Nyatwa",
   // projectUrl:"",
+  type: "mobile",
   textColor: "",
+  mobileUrl: [
+    {
+      type: "android",
+      url: "https://play.google.com/store/apps/details?id=com.PayChangu.nyatwa",
+    },
+  ],
 };
 
 export const projectsData = [
@@ -75,4 +103,5 @@ export const projectsData = [
   projectData2,
   projectData3,
   projectData4,
+  projectData5,
 ];
