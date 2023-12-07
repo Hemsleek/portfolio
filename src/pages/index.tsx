@@ -8,7 +8,7 @@ import Mail from "../components/Mail";
 import Menu from "../components/Menu";
 import NavBar from "../components/NavBar";
 import Projects from "../components/Projects";
-import Section from "../components/Section";
+// import Section from "../components/Section";
 import TechTools from "../components/TechTools";
 import {
   aboutData,

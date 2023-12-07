@@ -12,6 +12,9 @@
 .project:nth-child(odd) .projectDetails {
   left: 0;
 }
+.project .projectDetails{
+  z-index: 200;
+}
 .viewProject{
 }
 .viewProject:hover  div{

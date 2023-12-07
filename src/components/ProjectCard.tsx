@@ -38,7 +38,7 @@ const ProjectCard = ({
     >
       <div
         style={{ background: "#C1E5C0", backgroundColor: projectCoverBg }}
-        className="project-cover w-full md:w-[51.5rem] order-2 md:order-1   shadow-md"
+        className="project-cover w-full md:w-[51.5rem] order-2 md:order-1   shadow-md "
       >
         {isImageAvailable && (
           <Image
@@ -55,7 +55,7 @@ const ProjectCard = ({
       </div>
       <div
         style={{ background: "#18191F", backgroundColor: projectDetailBg }}
-        className={` right-0 ${styles.projectDetails} md:absolute  md:top-[2.5rem] w-full md:w-[21.23rem]  px-8 py-6 flex flex-col select-none order-1 md:order-2 text-[0.86rem]`}
+        className={` right-0 ${styles.projectDetails} md:absolute  md:top-[2.5rem] w-full md:w-[21.23rem]  px-8 py-6 flex flex-col select-none order-1 md:order-2 text-[0.86rem] `}
       >
         <h4 className="font-semibold text-[1.5rem]">{projectName}</h4>
         <p className="mt-2 text-ellipsis  mb-6  font-thin">{projectDesc}</p>
@@ -68,7 +68,13 @@ const ProjectCard = ({
         {type === "mobile" ? (
           <div className="flex items-center gap-x-6 mt-3">
             {mobileUrl.map((app) => (
-              <a key={app.type} href={app.url} target="_blank" rel="noreferrer">
+              <a
+                key={app.type}
+                href={app.url}
+                className=""
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={app.type === "ios" ? IosSvg : AndroidSvg}
                   alt="download-icon"
