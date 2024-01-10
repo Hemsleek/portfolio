@@ -13,16 +13,16 @@ export const HeroData = {
 
 export const aboutData = {
   about:
-    "Professional and Versatile Frontend Engineer who specializes in web and mobile software development with 5 years of experience building user-friendly applications. I am a proactive team player and have a core strong belief in communication, I am passionately and actively seeking new technologies on the fly to stay up-to-date on industry trends and advancements, and also work as a team to build and optimize performance for better achieving comprehensive solutions.  In my spare time, I explore the net to pick up new technologies and enjoy socializing.",
+    "Professional and Versatile Frontend Engineer who specializes in web and mobile software development with over 5 years of experience building user-friendly applications. I am a proactive team player and have a core strong belief in communication, I am passionately and actively seeking new technologies on the fly to stay up-to-date on industry trends and advancements, and also work as a team to build and optimize performance for better achieving comprehensive solutions.  In my spare time, I explore the net to pick up new technologies and enjoy socializing.",
 };
 
 export const techTools = {
   technologies:
-    "HTML5 & (S)CSS,Javascript(ES6+),React Native,Reactjs,TypeScript,Nextjs,Tailwindcss,StyledComponent,Nodejs,Express,Redux,Simpler State,Mongoose".split(
+    "HTML5 & (S)CSS,Javascript(ES6+),React Native,Reactjs,TypeScript,Nextjs,Solidjs, Tailwindcss,StyledComponent,Nodejs,Express,Redux,Simpler State,Mongoose".split(
       ","
     ),
   tools:
-    "VsCode,Git,Github,Gitlab,Firebase,Vercel,Netlify,Expo,Eas,Heroku,Jira, Trello,Click-Up".split(
+    "VsCode,Git,Github,Gitlab,Firebase,Vercel,Netlify,Expo,Eas,AWS,Heroku,Jira, Trello,Click-Up".split(
       ","
     ),
 };
@@ -35,7 +35,7 @@ export const footerData = {
   copyrightYear: "2020",
   socialsLink: {
     github: "https://github.com/hemsleek",
-    linkedIn: "https://www.linkedin.com/in/asiyanbi-mubashir-53566218b/",
+    linkedIn: "https://www.linkedin.com/in/hemsleek/",
     twitter: "https://www.twitter.com/hemsleek",
     codePen: "https://codepen.io/hemsleek/pens/",
   },
