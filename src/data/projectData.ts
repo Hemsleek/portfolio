@@ -17,7 +17,7 @@ const projectData1 = {
 
   projectName: "Lawparlance",
   projectDesc: "All-in-one legal management tool for your law practice",
-  projectUrl: "https://www.lawparlance.com/",
+  projectUrl: "https://lawparlance.vercel.app/",
   textColor: "",
 };
 
